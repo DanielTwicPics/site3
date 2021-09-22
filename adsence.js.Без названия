@@ -1,0 +1,4 @@
+(function(n,t){var i=n.document;(function(i){var u="//www.google.com/adsense/search/async-ads.js",r=!1;t.ads.providers.push("AFS","AFSH");t.ads.AFS={provider:"AFS",call:function(f,e,o){n[i]=n[i]||function(){(n[i].q=n[i].q||[]).push(arguments)};n[i].t=+new Date;r||t.getScript(u);r=!0;n[i](this.provider==="AFS"&&!f.isNative?"ads":"plas",e,o)}};t.ads.AFSH={provider:"AFSH",call:t.ads.AFS.call}})("_googCsa"),function(){var i="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",n=!1;t.ads.providers.push("AFC");t.ads.AFC={call:function(){for(var r=0;r<arguments.length;r++)typeof arguments[r]=="string"&&(adsbygoogle=window.adsbygoogle||[]).push({});window.adsbygoogle&&(n||t.getScript(i),n=!0)}}}()})(window,window.jQuery||window.$fwk);
+//# sourceMappingURL=adSence.js.map
+
+//# sourceMappingURL=adSence.js.map

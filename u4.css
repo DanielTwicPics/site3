@@ -1,0 +1,59 @@
+/**
+ * ZTD : extensible textarea
+ */
+.ZTD100Header{
+    background:url(https://i2.cdscdn.com/struct/u4/ztd_header.png) no-repeat;
+}
+.ZTD100Footer{
+    background:url(https://i2.cdscdn.com/struct/u4/ztd_footer.png) no-repeat;
+}
+.ZTD100TextArea1 strong,
+.ZTD100TextArea1 a,
+.ZTD100TextArea2 a{
+    color: #42413c;
+}
+.ZTD100TextArea1,
+.ZTD100TextArea2{
+    background:url(https://i2.cdscdn.com/struct/u4/ztd_background.png) repeat-y;
+}
+.ZTD100More{
+    background:url(https://i2.cdscdn.com/struct/u4/ztd_more.jpg) no-repeat;
+}
+.ZTD100Less{
+    background:url(https://i2.cdscdn.com/struct/u4/ztd_less.jpg) no-repeat;
+}
+
+/*Bouton pagination*/
+.asaisirStd001 .PaginationButtonStd001,
+.asaisirStd002 .PaginationButtonStd001,
+.asaisirStd003 .PaginationButtonStd001,
+.asaisirStd004 .PaginationButtonStd001,
+.productHomeList050Std002 .PaginationButtonStd001
+{
+    cursor: pointer;
+    float:left;
+    line-height: 26px;
+    color: #1C80E5;
+    text-align:center;    
+}
+.asaisirStd001 .PaginationButtonStd001_over,
+.asaisirStd002 .PaginationButtonStd001_over,
+.asaisirStd003 .PaginationButtonStd001_over,
+.asaisirStd004 .PaginationButtonStd001_over,
+.productHomeList050Std002 .PaginationButtonStd001_over
+{
+    background: url(https://i2.cdscdn.com/struct/common/button/pager-filter.png) no-repeat scroll -638px -51px #42413c;
+    cursor: pointer;
+    line-height: 26px;
+    color: #fff;
+    text-align:center;    
+}
+
+.asaisirStd001 .PaginationButtonStd001_over a,
+.asaisirStd002 .PaginationButtonStd001_over a,
+.asaisirStd003 .PaginationButtonStd001_over a,
+.asaisirStd004 .PaginationButtonStd001_over a,
+.productHomeList050Std002 .PaginationButtonStd001_over a
+{
+    color: #fff;
+}

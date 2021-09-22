@@ -1,0 +1,1106 @@
+/**
+* 1. BAZAAR VOICE
+* 2. ECO
+* 3. PRODUCT BLOC
+* 4. BLOCS PUB
+* 5. LEGAL NOTICE
+* 6. BLOC EDITO : CHANGE AFTER CONCAT
+* 7. IMAGE LISTER
+* 8. EXPRESS DELIVERY
+* 9. MARKETPLACE
+* 10. MEDIA QUERIES
+**/
+
+.renewMd5 {
+    display: none;
+}
+/*todo VARIABLE lien */
+.legalNotice a {
+    color: #096ec8;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    .legalNotice a:hover {
+        color: #096ec8;
+        text-decoration: underline;
+    }
+
+/** 1. BAZAAR VOICE **/
+.stClip img {
+    position: absolute;
+}
+
+.sta img, .newBasket .bProductLineDescStockRatings .sta img, .newBasket .carouAnimcoContainer .sta img {
+    background-image: url("https://i2.cdscdn.com/RWD/bv/stars.png");
+    background-repeat: no-repeat;
+}
+
+.newBasket .bProductLineDescStockRatings .sta img {
+    vertical-align: top;
+}
+
+.newBasket .sta img {
+    background-image: url("https://i2.cdscdn.com/resources/RWD/bv/sprite-etoile-vendeur.png");
+    background-repeat: no-repeat;
+}
+
+.newBasket .sta.N,
+.newBasket .sta.N img {
+    height: 14px;
+    width: 80px;
+}
+
+.newBasket .ratingPosition {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+/* Normal */
+.newBasket .stN5 img,
+.newBasket .sta.stClip.N img {
+    background-position: 0 0px;
+}
+
+.newBasket .stN1 img,
+.newBasket .sta.stClip.N .off {
+    background-position: -76px 0px;
+}
+
+.sta.S,
+.sta.S img {
+    height: 13px;
+    width: 70px;
+}
+
+.sta.M,
+.sta.M img {
+    height: 20px;
+    width: 125px;
+}
+
+.sta.N,
+.sta.N img {
+    height: 17px;
+    width: 100px;
+}
+/* Medium */
+.stM4 img {
+    background-position: -25px 0;
+}
+
+.stM3 img {
+    background-position: -50px 0;
+}
+
+.stM2 img {
+    background-position: -75px 0;
+}
+
+.stM1 img, .sta.stClip.M .off {
+    background-position: -100px 0;
+}
+/* Normal */
+.stN5 img,
+.sta.stClip.N img {
+    background-position: 0 -20px;
+}
+
+.stN4 img {
+    background-position: -20px -20px;
+}
+
+.stN3 img {
+    background-position: -40px -20px;
+}
+
+.stN2 img {
+    background-position: -60px -20px;
+}
+
+.stN1 img,
+.sta.stClip.N .off {
+    background-position: -80px -20px;
+}
+
+.stN0 img {
+    background-position: -100px -20px;
+}
+/* Small */
+.stS5 img,
+.sta.stClip.S img {
+    background-position: 0 -37px;
+}
+
+.stS4 img {
+    background-position: -14px -37px;
+}
+
+.stS3 img {
+    background-position: -28px -37px;
+}
+
+.stS2 img {
+    background-position: -42px -37px;
+}
+
+.stS1 img,
+.sta.stClip.S .off {
+    background-position: -56px -37px;
+}
+
+.stS0 img {
+    background-position: -70px -37px;
+}
+
+/** 2. ECO **/
+.ecoBlk {
+    background: #e23a05;
+    color: #fff;
+    font-size: .85em;
+    font-style: italic;
+    line-height: 1em;
+    padding: .5em;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    top: .9em;
+}
+
+.crItem .prdBlocContainer .ecoBlk {
+    top: 3.9em;
+}
+
+.newLpTopBox .crItem .prdBlocContainer .ecoBlk {
+    top: 3em;
+    margin-left: 10px;
+}
+
+.ecoBlk span {
+    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.ecoBlk:after {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAMFBMVEUAAADWMADHLQDhMwCwKAClJgCwKADBKwClJQDILQDNLwDSMADWMQDaMQClJgDfMgC275IOAAAABnRSTlMAgICAgIAFFwHTAAAAOElEQVQI12OI6+jo62BgSQMCBgb18vJyBgammTNnMjAwaK1aBSQZd+9mAAKZMyCS8S4DCNiDSWYA3GgMd5XuWzkAAAAASUVORK5CYII=') no-repeat right top;
+    bottom: -10px;
+    content: ' ';
+    height: 10px;
+    position: absolute;
+    left: 0;
+    width: 10px;
+}
+
+.ecoBlk.ecoSolding, .slrEco.ecoSolding {
+    background: #e23b13;
+    color: #fff;
+}
+
+    .ecoBlk.ecoSolding:after {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAALVBMVEUAAADcNQDKMAC2KQCiIQCTGwCQGgCWHQCdHwCmIwCwJwC7KwDFLgDPMgDYNABl2JrrAAAABnRSTlMAgICAgIAFFwHTAAAAN0lEQVQI12MISwMCBtZyIGBg8Ojo6GBgYJk5cyYDA4PVqlVAknn3bgYg0DkDIpnuMoCAHJhkBADaiAx8lme+rgAAAABJRU5ErkJggg==') no-repeat right top;
+    }
+/** 3. PRODUCT BLOC **/
+/* Flash - Coutant */
+.vf, .pc {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAMAAAA4a6b0AAABNVBMVEX///////8ICAj///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+nX8nUAAAAZnRSTlMAZmYcP6ULYqebkBe9QGFnNQgCTKiGEASZNqQBXhVGWLhR01+IsYUPY2WSq3sjdfT8uaChL60invkTVa7MHdvOy0ERfOLuIDeW3h8Fk1rBw1AWB7Y+bX0MQijGHinEVMdDnICJoy2hD+MMAAAA00lEQVR4Xr3RxY7DQBRE0co4RggzMzMOMzMzQ///J0TOtCy1ZC+Tuz1vUdKDTY6FWQnnHmetJU1I0Fqa7Y5Wcm2zAqEm+wPBVjRVKOZZcRKSGSEFQK03GIGYC/2fhMNd3ZRypcrtJKaQiMVxwFPx+dZ6/cEwaYBn0YWl5RUqq0frG5tbEQO8u3sCvPsKlUOel2KeiPMYODk9AwCZCqCeX0SlyyvQrm9MEW715N09aBAVZvWD9kjh6fmFEby+iXHgPeT/+AQr4L6kb/fPb+DP/j/zlgnNiBfsmdWUSwAAAABJRU5ErkJggg==') no-repeat .4em top #ff5318;
+    color: #fff;
+    font-weight: bold;
+    height: 2.3em;
+    line-height: 2.3em;
+    padding: 0 0 0 3.2em;
+    width: auto;
+}
+
+.pc {
+    background-color: #f00;
+}
+
+.mekakoGomette, .mekakoGomette img {
+    cursor: pointer;
+    display: block;
+}
+
+.mekakoGomette {
+    background: no-repeat center 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: .9em;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.fpLoopZoom {
+    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAV1BMVEUAAAAgICDb29sxMTHAwMDFxcXZ2dnb29vb29tQUFB4eHjb29vb29sICAgMDAwbGxuvr6/b29vb29vb29t9fX3b29vb29snJyeYmJjb29vb29vb29sAAACFAioYAAAAHHRSTlMA9lby0dDNpZbq4Hgj/fz31L5RA99uTfTZwppQWpwGHgAAAKdJREFUGNNtkFkOhCAQRNkERJHFXev+5xwniJhIfVVeHp2myT9j1EEGHUfyDpOGDxi4kexFZ+8Aying/Fxcb9EKpZVoYX32R+kwdf3V+m6Ck/f8aNB2t9K1MDFVzSH6G/cCXKcaBqpIjqJDSE0m4Xkqq7bd67OP+iZnbW8IVvklQBv2uQkeXi5ouRE083Lv/ThZU/g7mS9VvipS4XYrduHrNpNvFnW5P+UuDKkQQpbJAAAAAElFTkSuQmCC'),pointer;
+}
+
+.mkkGVisu, .mkkGVisu > div {
+    margin: 0 auto;
+    position: relative;
+    text-align: right;
+}
+
+    .mkkGVisu > span {
+        display: inline-block;
+    }
+
+    .mkkGVisu > div {
+        left: 0;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+    }
+
+.mekakoPdt {
+    background: #fff;
+    height: 38.1em;
+    left: 0;
+    padding: .75em;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 100%;
+    z-index: 601;
+}
+
+.mkkPClose {
+    cursor: pointer;
+    float: right;
+    text-decoration: none;
+}
+
+    .mkkPClose span {
+        display: inline-block;
+        padding-right: 5px;
+        text-decoration: underline;
+    }
+
+.mkkPTit {
+    border-bottom: 1px solid #d7d9e4;
+    clear: both;
+    font-weight: bold;
+    padding: 10px 0 10px 18px;
+}
+
+.mkkPDesc {
+    overflow: hidden;
+}
+
+    .mkkPDesc > img {
+        float: left;
+    }
+
+    .mkkPDesc strong {
+        display: block;
+        font-size: .9em;
+        padding-bottom: .5em;
+    }
+
+.mkkPDescX strong {
+    padding-bottom: 2em;
+}
+
+.mkkPDesc .stroken {
+    font-size: 1.1em;
+    padding: 0 .5em .5em 0;
+}
+
+.mkkPDesc .price {
+    font-family: impact,trebuchet ms,arial,sans-serif;
+    font-size: 2.65em;
+    font-weight: normal;
+    height: 1em;
+    line-height: .5em;
+}
+
+    .mkkPDesc .price sup {
+        font-size: .6em;
+        vertical-align: .6em;
+    }
+
+.mkkPDesc .mediumPrice {
+    font-size: 1.6em;
+    line-height: 1.6em;
+}
+
+.mkkPDesc .mkkPDRRem {
+    border: 2px solid #ffde00;
+    text-align: center;
+}
+
+.mkkPDRRMontant {
+    background: #ffde00;
+    color: #323232;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.mkkPDRRem .price {
+    line-height: 1.15em;
+}
+
+.mkkPMess {
+    clear: both;
+    font-weight: bold;
+    padding: 2em 10px 0;
+}
+
+.mkkPDescY + .mkkPMess {
+    padding-top: 1em;
+}
+
+.mkkPMess strong {
+    background: #924768;
+    color: #fff;
+    display: block;
+    font-size: 1.3em;
+    padding: .1em .5em;
+    margin-bottom: .2em;
+    text-transform: uppercase;
+}
+
+.mkkPLk {
+    bottom: 0;
+    left: 0;
+    padding-bottom: 3.9em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+    .mkkPLk a {
+        display: inline-block;
+        font-weight: bold;
+        margin: 2.5em auto;
+    }
+
+/** Ztd **/
+.ztdA:hover {
+    cursor: default;
+}
+
+.ztdH {
+    display: none;
+}
+
+.ztdImg {
+    height: auto;
+    max-width: 100px;
+    width: 100px;
+}
+
+.ztdLnkMore, .ztdTxt a {
+    color: #878787;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+    .ztdLnkMore:hover, .ztdTxt a:hover {
+        color: #096ec8;
+        text-decoration: underline;
+    }
+
+.ztdTop {
+    display: flex;
+    padding: 20px 0;
+}
+
+.ztdTxt {
+    color: #323232;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.ztdBloc {
+    flex-shrink: 1;
+    padding: 0 20px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.ztdBubbleBloc {
+    display: flex;
+    margin-top: 10px;
+}
+
+.ztdLnkOverflow {
+    height: 40px;
+}
+
+.ztdBubbleLink {
+    background: #ffffff;
+    border: 1px solid #d7d9e4;
+    border-radius: 15px;
+    color: #323232;
+    font-family: Arial;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 10px 0 0;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ztdShowLinks {
+    display: inline-block;
+}
+
+.ztdBubbleLink:hover {
+    background: #f7f7f7;
+    color: #096ec8;
+}
+
+.ztdBubbleLinkMore {
+    align-self: flex-start;
+    color: #096ec8;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.ztdBubbleLinkBloc {
+    flex-shrink: 1;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.ztdRanking {
+    color: #323232;
+    font-family: Arial;
+    font-size: 11px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.ztdRankingZtdHub {
+    margin-top: 17px !important;
+}
+
+/** Refonte Ztd **/
+.ztdTopRefonte {
+    border-bottom: 0px solid #d7d9e4;
+    border-top: 0px solid #d7d9e4;
+    display: flex;
+    padding: 0px 0px 10px 0px;
+}
+
+#sContener #lpContent .ztdTopRefonte {
+    padding: 5px 0;
+}
+
+.ztdRefonteTxt {
+    color: #323232;
+    font-family: Arial;
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.ztdTxtRef a {
+    color: #878787;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+    .ztdTxtRef a:hover {
+        color: #096ec8;
+        text-decoration: underline;
+    }
+
+.ztdBlocRefonte {
+    flex-shrink: 1;
+    padding: 0px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.ztdBubbleTitle {
+    font: bold 14px arial;
+    color: #323232;
+    opacity: 1;
+    height: 16px;
+    text-align: left;
+}
+
+.relatedSearchTitle {
+    font: bold 16px arial;
+    color: #323232;
+    opacity: 1;
+    text-align: left;
+    padding-right: 8px;
+}
+
+.ztdBlocRefonte {
+    flex-shrink: 1;
+    padding: 0px;
+    vertical-align: middle;
+    width: 100%;
+    position: relative;
+}
+
+.ztdLnkMoreRefonte {
+    color: #878787;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 12px;
+    text-decoration: none;
+    position: absolute;
+    right: 0px;
+    top: 3.5em;
+    margin-right: 15px;
+}
+
+#jsZtdLnkLess {
+    position: inherit !important;
+    float: right;
+    margin-top: 10px;
+}
+
+.ztdLnkMoreRefonte:hover {
+   color: #096ec8;
+   text-decoration: underline;
+}
+
+.ztdLinkMoreHub {
+    top: auto !important;
+}
+
+/** 4. BLOC PUB **/
+.pubGoodDeals {
+    background-color: #fff;
+    border: 1px solid #c9d5e3;
+    display: none;
+    margin-bottom: 2em;
+    min-height: 250px;
+    padding: 0.85em;
+    text-align: center;
+}
+
+.pgdPub {
+    display: inline-block;
+    margin: 0 2px;
+    vertical-align: top;
+}
+
+.pgdTxt, .pLTxt {
+    font-size: .9em;
+    padding: 0 0 5px;
+    position: absolute;
+    text-align: left;
+}
+
+.regBloc, .pubMBan, .pubPave, .pubLegal {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.pubMBan {
+    min-height: 110px;
+}
+
+.pubPave {
+    min-height: 267px;
+}
+
+.pubLegal {
+    position: relative;
+    min-height: 250px;
+}
+
+.regBloc > div {
+    margin: 0 auto;
+}
+
+.regTxt, .pubText {
+    font-size: .9em;
+    padding: 0 0 5px;
+    text-transform: uppercase;
+}
+
+.pubText { /* use for span */
+    display: block;
+}
+
+.pLPub {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pLTxtLegal {
+    margin: 10px 0 0;
+    text-align: left;
+}
+/* AFS / AFC */
+.adBlock {
+    margin: 20px 0;
+    word-wrap: break-word;
+}
+
+.adDbl {
+    clear: both;
+}
+
+.adDbl, .adDblRight {
+    overflow: hidden;
+}
+
+.adDblLeft {
+    float: left;
+    margin: 0 2% 0 0;
+    width: 49%;
+}
+
+
+/** 5. LEGAL NOTICE **/
+.legalNotice {
+    margin: 20px 0;
+    padding-left :10px;
+}
+
+
+/** 6. BLOC EDITO **/
+/* BLOC TO BE REPLACE IN A NEW FILE AFTER CONCATENATION PROJECT */
+.spEdito {
+    clear: both;
+    overflow: hidden;
+}
+
+.spEdImgLeft, .spEdImgRight {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.spEdImgLeft img, .spEdImgRight img {
+    max-width: 510px;
+}
+
+
+/** 7. IMAGE LISTER **/
+.imgList1, .imgListRz {
+    display: block;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.imgListRz img {
+    width: 100%;
+}
+
+.content > .imgListRz:first-child img {
+    height: 60px;
+    max-width: unset;
+    overflow: hidden;
+    padding: 0 .75em;
+    width: auto;
+}
+
+/* Refonte Top - FullSite */
+.lpTopLight #main .imgListRz:first-child, .lpTopLight #paContent .imgListRz:first-child {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60px;
+    width: auto;
+    max-width: unset;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+}
+
+.lpTopLight #paContent .OPCoFullSite {
+    padding: 0px !important;
+    margin: 0 0 16px !important;
+    max-width: none !important;
+}
+
+.lpTopLight #main #scContent .scTitle, .lpTopLight #main #scContent .bmmTitle, .lpTopLight #main #lpContent .scTitle, .lpTopLight #main #lpContent .jsbrandLicenseZdt, .lpTopLight #main #lpContent .ztdTop {
+    display: none;
+}
+
+.lpTopLight #main .bmmTitle, .lpTopLight #main #lpContent .lpTopContent {
+    display: none;
+}
+
+.imgList2, .imgList3, .imgList4 {
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+    .imgList4 .regBloc {
+        margin-top: 0;
+    }
+
+.imgList321 {
+    margin: 0;
+    max-width: 1900px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.imgList1 a, .imgList2 a, .imgList3 a, .imgList4 a, .imgList3 div {
+    background: no-repeat center 0;
+    display: block;
+    text-decoration: none;
+}
+
+    .imgList1 a.border, .imgList2 a.border, .imgList3 a.border, .imgList4 a.border, .imgList3 div.border, .imgListRz img.border {
+        border: 1px solid #d7d9e4;
+    }
+
+.imgList3 div {
+    cursor: pointer;
+}
+
+.imgList321 a {
+    background: no-repeat center 0;
+    border: 0;
+    display: block;
+    text-decoration: none;
+}
+
+.imgList1 a, .imgListRz a {
+    display: block;
+    overflow: hidden;
+}
+
+.imgList2 li, .imgList3 li, .imgList4 li {
+    float: left;
+    padding: 10px 0 0 10px;
+}
+
+.imgList321 li {
+    float: left;
+    margin: 10px 10px 0 0;
+    padding: 0;
+    width: 330px;
+    width: calc(33.33% - 10px);
+}
+
+.imgList2 li:first-child, .imgList3 li:first-child, .imgList4 li:first-child {
+    padding-left: 0;
+}
+
+.imgList321 li:nth-child(3) {
+    margin-right: 0;
+}
+
+.imgList321 li:last-child {
+    margin-right: 0;
+}
+
+.imgList2 li {
+    width: 50%;
+}
+
+.imgList3 li {
+    width: 33.33%;
+}
+
+.imgList4 li {
+    width: 25%;
+}
+
+.imgList2 a, .imgList3 a, .imgList4 a {
+    height: 200px;
+}
+
+.imgListBrand {
+    overflow: hidden;
+}
+
+    .imgListBrand li {
+        float: left;
+        padding: 10px 0 0;
+        text-align: center;
+        width: 12.5%;
+    }
+/* Suppression de l'espacement entre un imagelister et le control suivant */
+.imgListRz.imgListWithoutMarginBottom,
+.imgList1.imgListWithoutMarginBottom,
+.imgList2.imgListWithoutMarginBottom,
+.imgList3.imgListWithoutMarginBottom,
+.imgList4.imgListWithoutMarginBottom {
+    margin-bottom: 0;
+}
+
+    .imgListRz.imgListWithoutMarginBottom + div,
+    .imgList1.imgListWithoutMarginBottom + div,
+    .imgList2.imgListWithoutMarginBottom + div,
+    .imgList3.imgListWithoutMarginBottom + div,
+    .imgList4.imgListWithoutMarginBottom + div {
+        margin-top: 0;
+    }
+
+    .imgListRz.imgListWithoutMarginBottom + ul,
+    .imgList1.imgListWithoutMarginBottom + ul,
+    .imgList2.imgListWithoutMarginBottom + ul,
+    .imgList3.imgListWithoutMarginBottom + ul,
+    .imgList4.imgListWithoutMarginBottom + ul {
+        margin-top: 0;
+    }
+    /* Cas spécifique entre ImageLister et Carrousel animco rempli par algorithme*/
+    .imgListRz.imgListWithoutMarginBottom + div.jsPertSwCarousel .carouAnimcoContainer,
+    .imgList1.imgListWithoutMarginBottom + div.jsPertSwCarousel .carouAnimcoContainer,
+    .imgList2.imgListWithoutMarginBottom + div.jsPertSwCarousel .carouAnimcoContainer,
+    .imgList3.imgListWithoutMarginBottom + div.jsPertSwCarousel .carouAnimcoContainer,
+    .imgList4.imgListWithoutMarginBottom + div.jsPertSwCarousel .carouAnimcoContainer {
+        margin-top: 0;
+    }
+
+/** CLASS CSS COMMUNES **/
+.ttOver {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANBAMAAACEMClyAAAAKlBMVEX6+vrO1uDT2uNNTU3w8vTx8/YyMjJ0dHTDw8NGRkbCwsLs7Ow0NDTIyMiqcjNTAAAAOklEQVR4XmMIEgQBoQAGFQYQYFFgEGAAAwFkxmJj4wVgBntaOgOYwT1tNlRNTwOUwQvXhcKAmwy3CwARnwiVkk2f9gAAAABJRU5ErkJggg==') no-repeat 0 center;
+    cursor: pointer;
+    display: inline-block;
+    height: 13px;
+    margin-left: 5px;
+    text-align: left;
+    text-indent: -999em;
+    width: 15px;
+}
+
+.ttOverBlk {
+    background-color: #FFF;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #d5d8df;
+    border-top: 2px solid #323232;
+    box-shadow: 1px 2px 10px 0 #8f8f8f;
+    display: none;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    z-index: 10;
+}
+
+.ttCloseOver {
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.siteTablet .ttCloseOver {
+    display: block;
+}
+
+.logoAbolive {
+    color: #16B4F2;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.logoAboliveO {
+    color: #16B4F2;
+}
+
+.testDarkHeader .hLayers .hCdav span.logoAboliveO {
+    color: white;
+}
+
+.mgFacetContent .logoAbolive span.logoAboliveO {
+    vertical-align: initial;
+}
+
+a.logoAbolive {
+    text-decoration: none;
+}
+
+    a.logoAbolive:hover {
+        color: #008fbe;
+        text-decoration: underline;
+    }
+
+.logoExpressHighlight {
+    color: #0154b2;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.logoMobile {
+    color: #00d9c1;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/** 9. MARKETPLACE **/
+.premiumIcon {
+    margin-left: .3em;
+    vertical-align: baseline;
+}
+/** ERROR MESSAGE **/
+.btAdd {
+    position: relative;
+}
+
+select.selMsgVar, ul.selMsgVar {
+    border: 1px solid #ff0033;
+}
+
+.variantMsg {
+    background: white;
+    border-radius: 1px;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    color: #323232;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    transition: opacity .5s;
+    padding: 5px;
+    position: absolute;
+    width: 90%;
+    z-index: 9;
+}
+
+.variantMsgError {
+    color: red;
+    font-weight: bold;
+}
+
+.variantMsg:before {
+    background: white;
+    border-left: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    bottom: 47px;
+    content: " ";
+    display: block;
+    font-weight: bold;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    left: calc(100% - 5px); /*100 - midth arrow*/
+    top: calc(50% - 5px);
+}
+/** New Time Counter*/
+.stressCountDown {
+    font-size: 2em;
+    font-weight: bold;
+    min-height: 35px;
+    position: relative;
+    text-align: center;
+}
+
+    .stressCountDown .countDown {
+        display: inline-block;
+    }
+/** 10. MEDIA QUERIES **/
+/* < 1023 */
+@media only screen and (max-width: 1023px) {
+    .adDblRight {
+        display: none;
+    }
+
+    .adDblLeft {
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    .pgdPub {
+        margin: 20px 0 0;
+    }
+
+    /* Image lister */
+    .imgList2 li, .imgList2 li:first-child {
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .imgList4 li {
+        width: 50%;
+    }
+
+        .imgList4 li:nth-child(3) {
+            padding-left: 0px;
+        }
+
+    .imgListBrand li {
+        width: 20%;
+    }
+    /*.imgList321 {
+        margin: 0 -10px 0 0;
+    }*/
+    .imgList321 li {
+        min-height: 150px;
+        width: 369px;
+        width: calc(50% - 10px);
+    }
+
+        .imgList321 li:nth-child(2) {
+            margin-right: 0;
+        }
+
+        .imgList321 li:nth-child(3) {
+            margin-right: 10px;
+        }
+}
+/* < 767 */
+@media all and (max-width: 767px) {
+    .imgList321 li {
+        min-height: 150px;
+        width: 512px;
+        width: calc(50% - 10px);
+    }
+}
+/* > 1280 */
+@media only screen and (min-width: 1280px) {
+    /* Ads */
+    .pubDR1 {
+        margin: 0 0 0 180px;
+    }
+
+    .scDRLegal, .lpDRLegal, .spDRLegal {
+        display: inline-block;
+        vertical-align: bottom;
+    }
+    /* common ads */
+    .pLTxt + .pLPub {
+        margin-left: calc(50% - 310px);
+    }
+
+    .pLTxtLegal {
+        display: inline-block;
+        vertical-align: bottom;
+        width: calc(50% - 310px);
+        margin-left: 10px;
+    }
+
+    /* Bloc edito */
+    .spEdImgLeft {
+        margin: 0 20px 0 0;
+        float: left;
+    }
+
+    .spEdImgRight {
+        margin: 0 0 0 20px;
+        float: right;
+    }
+
+    .content > .imgListRz:first-child img {
+        height: 100px;
+    }
+
+    /* Refonte Top - FullSite */
+    .lpTopLight #main .imgListRz:first-child, .lpTopLight #paContent .imgListRz:first-child {
+        height: 100px;
+    }
+}

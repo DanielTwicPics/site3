@@ -1,0 +1,457 @@
+/** 
+COLOR UNIVERSES : couleurs des univers sur l'ark
+**/
+
+/************************     UNIVERS COLORS     ************************/
+
+/*		Class	Normal		Light		Dark
+ *
+ *		u_1		#476075		#536f86		#2b465d
+ *		u_2 	#589ca7		#63afbb		#3b6c74
+ *		u_3 	#44bfa0		#49d0ae		#2c9278
+ *		u_4 	#ffc03e		#ffcf3f		#ff9e04
+ *		u_5 	#ff7c4f		#ff8b63		#ea5522
+ *		u_6 	#e54f4c		#f2625f		#f13632
+ *		u_7 	#22398e		#2f4bb5		#1e337e
+ *		u_8 	#05b9e7		#00cbff		#03abd6
+ *		u_src	#798da8		NaN			NaN
+ *	*/
+
+
+/*******  Base Univers (based on u_7) ********/
+.bU,
+.mvTop, .mvCr .crTitre,
+.olMag:hover, .subTitle, .zNoMiss ul,
+.scTdOnglet .act,
+.fpLkBar a {
+	background-color: #22398e;
+}
+.ctVP
+.mvCloud a.tagCloud-veryPopular, /* TODO delete after mantis charte */
+.navV a:hover, .subNavV span:hover,/* TODO delete after mantis charte : */ .navV li li span:hover , .navV li.act > a,
+.olMag ol a:hover, .olMag .subDeleg span:hover {
+	color: #22398e;
+}
+.testHeaderServices .olMag ol a:hover {
+	color: #323232
+}
+.navV {
+	border-left-color: #22398e;
+}
+.olMag {
+	border-top-color: #22398e;
+}
+.scTdOnglet .act {
+	border-bottom-color: #22398e;
+}
+.bcU,
+.olMag:hover > a, .subMenu {
+	border-color: #22398e;
+}
+.dbU1, .bU1 .active,
+.scTdOnglet li,
+.fpLkBar span, .fpLkBar a:hover {
+	background-color: #1f3380; /* background dark */
+}
+
+/*******  Univers 1  ********/
+.bU1, .u_1 .bU, .bU1.active,
+.u_1 .mvTop, .u_1 .mvCr .crTitre,
+.u_1.olMag:hover, .u_1 .subTitle, .u_1 .zNoMiss ul,
+.u_1 .scTdOnglet .act,
+.u_1.fpLkBar a {
+	background-color: #476075;
+}
+.cU1, 
+.u_1 .mvCloud a.tagCloud-veryPopular,  /* TODO delete after mantis charte */
+.u_1 .navV a:hover, .u_1 .navV div.act, .u_1 .subNavV span:hover,/* TODO delete after mantis charte : */ .u_1 .navV li li span:hover, .u_1 .navV li.act > a,
+.u_1 .mvFSNAct, .u_1 .mvFSNAct a,
+.olMag.u_1 ol a:hover, .olMag.u_1 .subDeleg span:hover, .olMag.u_1 .olPartnersLk a:hover {
+	color: #476075;
+}
+.u_1 .navV, .u_1.qBloc, .nTetiere .olMag.u_1:hover > a {
+	border-left-color: #476075;
+}
+.u_1.olMag  {
+	border-top-color: #476075;
+}
+.u_1 .scTdOnglet .act {
+	border-bottom-color: #476075;
+}
+.u_1 .bcU,
+.u_1.olMag:hover > a, .u_1 .subMenu {
+	border-color: #476075;
+}
+.dbU1, .bU1 .active,
+.u_1 .scTdOnglet li,
+.u_1.fpLkBar span, .u_1.fpLkBar a:hover {
+	background-color: #405669; /* background dark */
+}
+.u_1 .mvLpSeeMenu, .u_1 .mvCr .crLeft, .u_1 .mvCr .crRight {
+	background: #536f86;/* Color light */
+}
+.u_1 .mvCr .crLeft, .u_1 .mvCr .crRight, .u_1 .mvLpSeeMenuArr {
+	color: #2b465d;/* Color (dark) */
+}
+.u_1 .mvLpSeeMenu, .u_1 .mvCr .crV .crLeft {
+	border-color: #2b465d;/* Color border (dark) */
+}
+
+
+/*******  Univers 2  ********/
+.bU2, .u_2 .bU, .bU2.active,
+.u_2 .mvTop, .u_2 .mvCr .crTitre,
+.u_2.olMag:hover, .u_2 .subTitle, .u_2 .zNoMiss ul,
+.u_2 .scTdOnglet .act,
+.u_2.fpLkBar a {
+	background-color: #589ca7;
+}
+.cU2, 
+.u_2 .mvCloud a.tagCloud-veryPopular,  /* TODO delete after mantis charte */
+.u_2 .navV a:hover, .u_2 .navV div.act, .u_2 .subNavV span:hover,/* TODO delete after mantis charte : */ .u_2 .navV li li span:hover, .u_2 .navV .act > a,
+.u_2 .mvFSNAct, .u_2 .mvFSNAct a,
+.olMag.u_2 ol a:hover, .olMag.u_2 ol .subDeleg span:hover, .olMag.u_2 .olPartnersLk a:hover {
+	color: #589ca7;
+}
+.u_2 .navV, .u_2.qBloc, .nTetiere .olMag.u_2:hover > a {
+	border-left-color: #589ca7;
+}
+.u_2.olMag {
+	border-top-color: #589ca7;
+}
+.u_2 .scTdOnglet .act {
+	border-bottom-color: #589ca7;
+}
+.u_2 .bcU,
+.u_2.olMag:hover > a, .u_2 .subMenu {
+	border-color: #589ca7;
+}
+.dbU2, .bU2 .active,
+.u_2 .scTdOnglet li,
+.u_2.fpLkBar span, .u_2.fpLkBar a:hover {
+	background-color: #4f8c96; /* background dark */
+}
+.u_2 .mvLpSeeMenu, .u_2 .mvCr .crLeft, .u_2 .mvCr .crRight {
+	background: #63afbb;/* Color light */
+}
+.u_2 .mvCr .crLeft, .u_2 .mvCr .crRight, .u_2 .mvLpSeeMenuArr {
+	color: #3b6c74;/* Color arrows */
+}
+.u_2 .mvLpSeeMenu, .u_2 .mvCr .crV .crLeft {
+	border-color: #3b6c74;/* Color border (dark) */
+}
+
+
+/*******  Univers 3  ********/
+.bU3, .u_3 .bU, .bU3.active,
+.u_3 .mvTop, .u_3 .mvCr .crTitre,
+.u_3.olMag:hover, .u_3 .subTitle, .u_3 .zNoMiss ul,
+.u_3 .scTdOnglet .act,
+.u_3.fpLkBar a {
+	background-color: #44bfa0;
+}
+.cU3, 
+.u_3 .mvCloud a.tagCloud-veryPopular,  /* TODO delete after mantis charte */
+.u_3 .navV a:hover, .u_3 .navV div.act, .u_3 .subNavV span:hover,/* TODO delete after mantis charte : */ .u_3 .navV li li span:hover, .u_3 .navV li.act > a,
+.u_3 .mvFSNAct, .u_3 .mvFSNAct a,
+.olMag.u_3 ol a:hover, .olMag.u_3 ol .subDeleg span:hover, .olMag.u_3 .olPartnersLk a:hover {
+	color: #44bfa0;
+}
+.u_3 .navV, .u_3.qBloc, .nTetiere .olMag.u_3:hover > a {
+	border-left-color: #44bfa0;
+}
+.u_3.olMag  {
+	border-top-color: #44bfa0;
+}
+.u_3 .scTdOnglet .act {
+	border-bottom-color: #44bfa0;
+}
+.u_3 .bcU,
+.u_3.olMag:hover > a, .u_3 .subMenu {
+	border-color: #44bfa0;
+}
+.dbU3, .bU3 .active,
+.u_3 .scTdOnglet li,
+.u_3.fpLkBar span, .u_3.fpLkBar a:hover {
+	background-color: #3dac90; /* background dark */
+}
+.u_3 .mvLpSeeMenu, .u_3 .mvCr .crV .crLeft, .u_3 .mvCr .crRight {
+	background: #49d0ae;/* Color light */
+}
+.u_3 .mvCr .crLeft, .u_3 .mvCr .crRight, .u_3 .mvLpSeeMenuArr {
+	color: #2c9278;/* Color dark */
+}
+.u_3 .mvLpSeeMenu, .u_3 .mvCr .crV .crLeft {
+	border-color: #2c9278;/* Color border (dark) */
+}
+
+
+/*******  Univers 4  ********/
+.bU4, .u_4 .bU, .bU4.active,
+.u_4 .mvTop, .u_4 .mvCr .crTitre,
+.u_4.olMag:hover, .u_4 .subTitle, .u_4 .zNoMiss ul,
+.u_4 .scTdOnglet .act,
+.u_4.fpLkBar a {
+	background-color: #ffc03e;
+}
+.cU4, 
+.u_4 .mvCloud a.tagCloud-veryPopular, /* TODO delete after mantis charte */
+.u_4 .navV a:hover, .u_4 .navV div.act, .u_4 .subNavV span:hover,/* TODO delete after mantis charte : */ .u_4 .navV li li span:hover, .u_4 .navV li.act > a,
+.u_4 .mvFSNAct, .u_4 .mvFSNAct a,
+.olMag.u_4 ol a:hover, .olMag.u_4 ol .subDeleg span:hover, .olMag.u_4 .olPartnersLk a:hover {
+	color: #ffc03e;
+}
+.u_4 .navV, .u_4.qBloc, .nTetiere .olMag.u_4:hover > a {
+	border-left-color: #ffc03e;
+}
+.u_4.olMag {
+	border-top-color: #ffc03e;
+}
+.u_4 .scTdOnglet .act {
+	border-bottom-color: #ffc03e;
+}
+.u_4 .bcU,
+.u_4.olMag:hover > a, .u_4 .subMenu {
+	border-color: #ffc03e;
+}
+.dbU4, .bU4 .active,
+.u_4 .scTdOnglet li,
+.u_4.fpLkBar span, .u_4.fpLkBar a:hover {
+	background-color: #e5ac38; /* background dark */
+}
+.u_4 .mvLpSeeMenu, .u_4 .mvCr .crV .crLeft, .u_4 .mvCr .crRight {
+	background: #ffcf3f;/* Color light */
+}
+.u_4 .mvCr .crLeft, .u_4 .mvCr .crRight, .u_4 .mvLpSeeMenuArr {
+	color: #ff9e04;/* Color dark */
+}
+.u_4 .mvLpSeeMenu, .u_4 .mvCr .crV .crLeft {
+	border-color: #ff9e04;/* Color border (dark) */
+}
+
+
+/*******  Univers 5  ********/
+.bU5, .u_5 .bU, .bU5.active,
+.u_5 .mvTop, .u_5 .mvCr .crTitre,
+.u_5.olMag:hover, .u_5 .subTitle, .u_5 .zNoMiss ul,
+.u_5 .scTdOnglet .act,
+.u_5.fpLkBar a {
+	background-color: #ff7c4f;
+}
+.cU5, 
+.u_5 .mvCloud a.tagCloud-veryPopular,  /* TODO delete after mantis charte */
+.u_5 .navV a:hover, .u_5 .navV div.act, .u_5 .subNavV span:hover,/* TODO delete after mantis charte : */.u_5 .navV li li span:hover, .u_5 .navV li.act > a,
+.u_5 .mvFSNAct, .u_5 .mvFSNAct a,
+.olMag.u_5 ol a:hover, .olMag.u_5 ol .subDeleg span:hover, .olMag.u_5 .olPartnersLk a:hover {
+	color: #ff7c4f;
+}
+.u_5 .navV, .nTetiere .olMag.u_5:hover > a {
+	border-left-color: #ff7c4f;
+}
+.u_5.olMag {
+	border-top-color: #ff7c4f;
+}
+.u_5 .scTdOnglet .act {
+	border-bottom-color: #ff7c4f;
+}
+.u_5 .bcU,
+.u_5.olMag:hover > a, .u_5 .subMenu {
+	border-color: #ff7c4f;
+}
+.dbU5, .bU5 .active,
+.u_5 .scTdOnglet li,
+.u_5.fpLkBar span, .u_5.fpLkBar a:hover {
+	background-color: #e56f47; /* background dark */
+}
+.u_5 .mvLpSeeMenu, .u_5 .mvCr .crV .crLeft, .u_5 .mvCr .crRight {
+	background: #ff8b63;/* Color light */
+}
+.u_5 .mvCr .crLeft, .u_5 .mvCr .crRight, .u_5 .mvLpSeeMenuArr {
+	color: #ea5522;/* Color dark */
+}
+.u_5 .mvLpSeeMenu, .u_5 .mvCr .crV .crLeft {
+	border-color: #ea5522;/* Color border (dark) */
+}
+
+
+/*******  Univers 6  ********/
+.bU6, .u_6 .bU, .bU6.active,
+.u_6 .mvTop, .u_6 .mvCr .crTitre,
+.u_6.olMag:hover, .u_6 .subTitle, .u_6 .zNoMiss ul,
+.u_6 .scTdOnglet .act,
+.u_6.fpLkBar a {
+	background-color: #e54f4c;
+}
+.cU6, 
+.u_6 .mvCloud a.tagCloud-veryPopular,  /* TODO delete after mantis charte */
+.u_6 .navV a:hover, .u_6 .navV div.act, .u_6 .subNavV span:hover,/* TODO delete after mantis charte : */ .u_6 .navV li li span:hover, .u_6 .navV li.act > a,
+.u_6 .mvFSNAct, .u_6 .mvFSNAct a,
+.olMag.u_6 ol a:hover, .olMag.u_6 ol .subDeleg span:hover, .olMag.u_6 .olPartnersLk a:hover {
+	color: #e54f4c;
+}
+.u_6 .navV, .nTetiere .olMag.u_6:hover > a {
+	border-left-color: #e54f4c;
+}
+.u_6.olMag {
+	border-top-color: #e54f4c;
+}
+.u_6 .scTdOnglet .act {
+	border-bottom-color: #e54f4c;
+}
+.u_6 .bcU,
+.u_6.olMag:hover > a, .u_6 .subMenu {
+	border-color: #e54f4c;
+}
+.dbU6, .bU6 .active,
+.u_6 .scTdOnglet li,
+.u_6.fpLkBar span, .u_6.fpLkBar a:hover {
+	background-color: #ce4744; /* background dark */
+}
+.u_6 .mvLpSeeMenu, .u_6 .mvCr .crV .crLeft, .u_6 .mvCr .crRight {
+	background: #f2625f;/* Color light */
+}
+.u_6 .mvCr .crLeft, .u_6 .mvCr .crRight, .u_6 .mvLpSeeMenuArr {
+	color: #f13632;/* Color dark */
+}
+.u_6 .mvLpSeeMenu, .u_6 .mvCr .crV .crLeft {
+	border-color: #f13632;/* Color border (dark) */
+}
+
+
+/*******  Univers 7  ********/
+.bU7, .u_7 .bU, .bU7.active,
+.u_7 .mvTop, .u_7 .mvCr .crTitre,
+.u_7.olMag:hover, .u_7 .subTitle, .u_7 .zNoMiss ul,
+.u_7 .scTdOnglet .act,
+.u_7.fpLkBar a {
+	background-color: #22398e;
+}
+.cU7, 
+.u_7 .mvCloud a.tagCloud-veryPopular, /* TODO delete after mantis charte */
+.u_7 .navV a:hover, .u_7 .navV div.act, .u_7 .subNavV span:hover,/* TODO delete after mantis charte : */ .u_7 .navV li li span:hover, .u_7 .navV li.act > a,
+.u_7 .mvFSNAct, .u_7 .mvFSNAct a,
+.olMag.u_7 ol a:hover, .olMag.u_7 ol .subDeleg span:hover, .olMag.u_7 .olPartnersLk a:hover {
+	color: #22398e;
+}
+.u_7 .navV, .nTetiere .olMag.u_7:hover > a {
+	border-left-color: #22398e;
+}
+.u_7.olMag {
+	border-top-color: #22398e;
+}
+.u_7 .scTdOnglet .act {
+	border-bottom-color: #22398e;
+}
+.u_7 .bcU,
+.u_7.olMag:hover > a, .u_7 .subMenu {
+	border-color: #22398e;
+}
+.dbU7, .bU7 .active,
+.u_7 .scTdOnglet li,
+.u_7.fpLkBar span, .u_7.fpLkBar a:hover {
+	background-color: #1f3380; /* background dark */
+}
+.u_7 .mvLpSeeMenu, .u_7 .mvCr .crV .crLeft, .u_7 .mvCr .crRight {
+	background: #2f4bb5;/* Color light */
+}
+.u_7 .mvCr .crLeft, .u_7 .mvCr .crRight, .u_7 .mvLpSeeMenuArr {
+	color: #1e337e;/* Color dark */
+}
+.u_7 .mvLpSeeMenu, .u_7 .mvCr .crV .crLeft {
+	border-color: #1e337e;/* Color border (dark) */
+}
+
+
+/*******  Univers 8  ********/
+.bU8, .u_8 .bU, .bU8.active,
+.u_8 .mvTop, .u_8 .mvCr .crTitre,
+.u_8.olMag:hover, .u_8 .subTitle, .u_8 .zNoMiss ul,
+.u_8 .scTdOnglet .act,
+.u_8.fpLkBar a {
+	background-color: #05b9e7;
+}
+.cU8, 
+.u_8 .mvCloud a.tagCloud-veryPopular,  /* TODO delete after mantis charte */
+.u_8 .navV a:hover, .u_8 .navV div.act, .u_8 .subNavV span:hover,/* TODO delete after mantis charte : */ .u_8 .navV li li span:hover, .u_8 .navV li.act > a,
+.u_8 .mvFSNAct, .u_8 .mvFSNAct a,
+.olMag.u_8 ol a:hover, .olMag.u_8 ol .subDeleg span:hover, .olMag.u_8 .zBest span, .olMag.u_8 .olPartnersLk a:hover {
+	color: #05b9e7;
+}
+.u_8 .navV, .nTetiere .olMag.u_8:hover > a {
+	border-left-color: #05b9e7;
+}
+.u_8.olMag {
+	border-top-color: #05b9e7;
+}
+.u_8 .scTdOnglet .act {
+	border-bottom-color: #05b9e7;
+}
+.u_8 .bcU,
+.u_8.olMag:hover > a, .u_8 .subMenu {
+	border-color: #05b9e7;
+}
+.dbU8, .bU8 .active,
+.u_8 .scTdOnglet li,
+.u_8.fpLkBar span, .u_8.fpLkBar a:hover {
+	background-color: #04a6cf; /* background dark */
+}
+.u_8 .mvLpSeeMenu, .u_8 .mvCr .crV .crLeft, .u_8 .mvCr .crRight {
+	background: #00cbff;/* Color light */
+}
+.u_8 .mvCr .crLeft, .u_8 .mvCr .crRight, .u_8 .mvLpSeeMenuArr {
+	color: #03abd6;/* Color arrows */
+}
+.u_8 .mvLpSeeMenu, .u_8 .mvCr .crV .crLeft {
+	border-color: #03abd6;/* Color border (dark) */
+}
+
+
+/*******  Univers Search  ********/
+.bUsrc, .u_src .bU,
+.u_src .mvTop, .u_src .mvCr .crTitre {
+	background: #798da8;
+}
+.cU0 {
+	color: #323232!important;
+}
+.u_src .mvSrc {
+	border-left-color: #798da8;
+}
+.u_src .bcU {
+	border-color: #798da8;
+}
+.u_src .mvSrc li.current > a, .u_src .mvSrc li.current > label {
+	background: #dbe5f2;
+}
+
+
+/*
+@media : all and (min-width: 768px and max-width: 1024px)
+Width between 768px (included) 1024px (included)
+*/
+@media only screen and (max-width: 1023px) {
+	.olMag.u_1 > a {
+		border-color: #476075;
+	}
+	.olMag.u_2 > a {
+		border-color: #589ca7;
+	}
+	.olMag.u_3 > a {
+		border-color: #44bfa0;
+	}
+	.olMag.u_4 > a {
+		border-color: #ffc03e;
+	}
+	.olMag.u_5 > a {
+		border-color: #ff7c4f;
+	}
+	.olMag.u_6 > a {
+		border-color: #e54f4c;
+	}
+	.olMag.u_7 > a {
+		border-color: #22398e;
+	}
+	.olMag.u_8 > a {
+		border-color: #05b9e7;
+	}
+}

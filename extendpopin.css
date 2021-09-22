@@ -1,0 +1,318 @@
+.popin {
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #5e5e5e;
+    left: 50%;
+    max-width: 480px;
+    padding: 1.5em 1em 1.5em 1.5em;
+    position: absolute; /* for iOS */
+    text-align: center;
+    top: 50%;
+    z-index: 601;
+}
+
+.popinFull {
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #5e5e5e;
+    left: 3%;
+    width: 94%;
+    padding: 1em;
+    position: absolute; /* for iOS */
+    text-align: center;
+    top: 3%;
+    z-index: 601;
+}
+
+.pClose {
+    cursor: pointer;
+    float: right;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0 0 0 .5em;
+    position: relative;
+    top: -20px;
+}
+
+.popin p, .popin .popinTitle {
+    color: #323232;
+    line-height: 1.5em;
+    margin: 1.5em 0;
+    padding-right: 15px;
+    text-align: left;
+}
+
+.popin .popinTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.popin input[type=button] {
+    border-radius: 5px;
+    padding: 0 1.5em;
+    margin: 0 1em 10px;
+    width: auto;
+}
+
+#overlay, #overlayLoad {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 600;
+}
+
+#overlay {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlOZyTXzhgAAAApJREFUeF5jYAAAAAIAAd6ej78AAAAASUVORK5CYII=');
+}
+
+#overlayLoad {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEWAgICQdD0xAAAAAXRSTlOArV5bRgAAAApJREFUeF5jYAAAAAIAAd6ej78AAAAASUVORK5CYII=');
+}
+
+#overlayLoad p {
+    background: url('https://i2.cdscdn.com/RWD/loader.gif') center center no-repeat #fff;
+    border-radius: 3px;
+    border: 1px solid #bbc9d7;
+    font-weight: bold;
+    margin: 20em auto;
+    padding: 8em 0 2em;
+    text-align: center;
+    width: 20em;
+}
+
+.transparentOverlay {
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.thickLine{
+    border-bottom: 0.125em solid #f1f1f5;
+}
+
+.waitingOverlay {
+    background: rgba(255, 255, 255, 0.7);
+    color: #FFF;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 800;
+}
+
+.blockOverlay.waitingOverlay{    
+    position: absolute;
+}
+
+.blockOverlay .waitingLoader {
+    position: absolute;
+}
+
+.waitingLoader:before {
+    background: url('https://i2.cdscdn.com/RWD/nLoaderCds.gif') center 10px no-repeat;
+    background-size: 80px;
+    border-radius: 50px;
+    content: " ";
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+
+.blockOverlay .waitingLoader:before{
+    background: url('https://i2.cdscdn.com/resources/RWD/loader-blanc.gif') center 10px no-repeat;
+}
+
+.waitingLoader {
+    font-size: 1.4em; /*Inutile si nouveau loader*/
+    height: 100px;
+    position: fixed;
+    text-align: center;
+    top: 180px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*  Loader svg */
+.waitingLoaderSvg {
+    position: relative;
+    text-align: center;
+    top: 200px;
+}
+
+.waitingLoaderSvg .svgContainer {
+    background-color: #283847;
+    border-radius: 40px;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+}
+
+.waitingLoaderSvg .circular {
+    animation: waitingLoaderSvgRotate 1.3s ease-in-out infinite;
+    height: 100%;
+    width: 100%;
+}
+
+.waitingLoaderSvg .path {
+    animation: waitingLoaderSvgCollapse 1.3s ease-in-out infinite;
+    stroke: #e3410e;
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -18;
+    stroke-linecap: square;
+    stroke-width: 10px;
+}
+
+@keyframes waitingLoaderSvgRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes waitingLoaderSvgCollapse {
+    0% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -18;
+    }
+
+    20% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -18;
+    }
+
+    40% {
+        stroke-dasharray: 0,200;
+        stroke-dashoffset: -90;
+    }
+
+    100% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -18;
+    }
+}
+
+/*
+* popin max quantite
+*/
+
+.popinMaxQuantite {
+    background-color: #eef1f8;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px #5e5e5e;
+    padding: 0;
+    text-align: left;
+    width: 800px;
+    max-width: 800px;
+    z-index: 601;
+}
+
+.popinMaxQuantite::after {
+    clear: both;
+    content: '';
+    display: block;
+    position: relative;
+}
+
+.popinMaxQuantite .pClose {
+    cursor: pointer;
+    float: none;
+    font-size: 1.6em;
+    font-weight: bold;
+    position: absolute;
+    right: 13px;
+    top: 8px;
+}
+
+.popinMaxQuantite p,.popinMaxQuantite .popinTitle {
+    color: #323232;
+    font-family: Calibri, Arial;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-right: 15px;
+    text-align: left;
+}
+
+.popinMaxQuantite .popinTitle {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+.popinMaxQuantite input[type=button] {
+    border-radius: 5px;
+    margin: 0 1em 10px;
+    padding: 1em 1.5em;
+    width: auto;
+}
+
+.popinMaxQuantite .innerCols {
+    font-size: 0;
+}
+
+.popinMaxQuantite .colLeft {
+    background: #fff;
+    display: inline-block;
+    height: 340px;
+    padding: 80px 0 120px;
+    text-align: center;
+    vertical-align: middle;
+    width: 30%;
+}
+
+.popinMaxQuantite .colLeft > * {
+    height: auto;
+    max-height: 140px;
+    max-width: 100%;
+    width: auto;
+}
+
+.popinMaxQuantite .colRight {
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 40px;
+    vertical-align: middle;
+    width: 70%;
+}
+
+.popinMaxQuantite .action {
+    margin-top: 25px;
+}
+
+.popinMaxQuantite .action a {
+    background-color: #fff;
+    border-radius: 5px;
+    color: #096ec8;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.popinMaxQuantite .action input[type=button] {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 0 0 10px;
+    padding: 0 15px;
+}

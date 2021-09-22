@@ -1,0 +1,4 @@
+(function(n){var t="https://www.cdiscount.com",i="LogoutSecured.mvc/",r="custo",u="login",f=document.location.protocol;n.customerLogin={init:function(n){var r=n||{};r.httpsServerUrl&&(t=r.httpsServerUrl+"/",r.logoutSecuredUrl&&(i=t+r.logoutSecuredUrl))},logout:function(){n.storage.remove(u);n.storage.remove(r);n.ajax({type:"GET",dataType:"jsonp",url:i})},_callbackLogout:function(){window.location=f+"//"+window.location.host}}})($);
+//# sourceMappingURL=customerLogin.js.map
+
+//# sourceMappingURL=customerLogin.js.map

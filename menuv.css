@@ -1,0 +1,1521 @@
+/** 
+menuV : navigation de la colonne de gauche
+
+1. GLOBAL
+2. COMMON
+3. VITRINE
+4. SEARCH
+5. LP
+6. PLAN DU SITE
+7. MEDIA
+**/
+
+@charset "UTF-8";
+
+.renewMd5 {
+    display: none;
+}
+
+#content {
+	overflow: hidden;
+}
+
+/** 1. GLOBAL **/
+#menuV {
+	float: left;
+	margin: 0 20px 0 2px;
+	min-height: 20px;
+	position: relative;
+	width: 200px;
+}
+/** 2. COMMON **/
+.mvTop {
+	color: #fff;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	overflow: hidden;
+	padding: 6px 10px;
+	text-transform: uppercase;
+}
+.mvTop a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	width: 100%;
+}
+.u_src .mvTop {
+	text-transform: none;
+}
+.navV, .mvSrc {
+	background: #fff;
+	border-left: 3px solid #fff;
+	border-right: 1px solid #d7d9e4;
+}
+.mvOv {
+	display: none;
+}
+.mvMustHave, .mvSup, .mvGg, .mvFullNav {
+	border: 1px solid #d7d9e4;
+	font-size: .9em;
+	margin: 10px 0;
+	padding: 15px;
+}
+.mvSupQA {
+	background: url('https://i2.cdscdn.com/RWD/question/askQuestion.png') no-repeat 145px 50%;
+	border: 1px solid #d7d9e4;
+	margin: 10px 0;
+	padding: 5px 10px;
+}
+.mvQA {
+	display: block;
+	text-decoration: none;
+}
+.mvQA:hover {
+	text-decoration: underline;
+}
+.mvQA div {
+	display: block;
+	font-size: 1.1em;
+	margin: 5px;
+	width:130px;
+}
+.mvMHTit, .mvSTxt {
+	font-size: 1.2em;
+	padding: 0 0 5px;
+	text-transform: uppercase;
+}
+ul+.mvSTxt {
+	border-top: 1px solid #d7d9e4;	
+	padding-top: 10px;
+}
+.mvMustHave li, .mvSup li, .mvFullNav li { 
+	padding: 5px 0;
+}
+.mvMustHave a, .mvSup a, .mvFullNav a {
+	text-decoration: none;
+}
+.mvMustHave a:hover, .mvSup a:hover, .mvFullNav a:hover {
+	text-decoration: underline;
+}
+.mvSTxt a:before {
+	content: "";
+}
+.mvSup .mvExpendMore, .mvSup .mvExpendLess { 
+	text-align: right;
+	font-size: 1.4em
+}
+.mvFullNav {
+	padding: 15px 5px 15px 10px;
+}
+.mvFullNav .mvSTxt {
+	cursor: pointer;
+	padding: 0;
+}
+.mvFullNav .mvSTxt.open {
+	padding: 0 0 5px;
+}
+.mvFullNav .mvSTxt:before {
+	content: "+";
+	display: inline-block;
+	font-size: 1.7em;
+	line-height: 0.6em;
+	vertical-align: top;
+	width: .8em;
+}
+.mvFullNav .mvSTxt.open:before {
+	content: "-";
+}
+.mvFNav {
+	display: none;
+	padding: 0 0 0 5px;
+}
+.mvFNav div {
+	cursor: pointer;
+	padding-right: 15px;
+	position: relative;
+}
+.mvFNav div:after {
+	content: "+";
+	font-size: 1.4em;
+	line-height: 1em;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.mvFNav div.open:after {
+	content: "-";
+}
+.mvFSubNav {
+	padding: 5px 0 0;
+}
+.mvFSubNav li {
+	padding: 5px 10px;
+}
+.mvFSubNav li:before {
+	content :"\2022 \00a0";
+}
+/* Google Ads */
+.mvGg {
+	word-wrap: break-word;
+}
+/* Carousel */
+.mvCr .crTitreV, .mvCr .crContainer, .mvCr .crV.crContainer .crLeft, .mvCr .crV.crContainer .crRight {
+	border-radius: 0;
+	margin: 0;
+}
+.mvCr .crTitreV {
+	font-weight: normal;
+}
+.mvCr .crLeft, .mvCr .crRight {
+	font-size: 4.5em;
+}
+
+/* Nouveau menu */
+.mvNav {
+	border: 1px solid;
+	margin: 0 0 10px;
+}
+.mvNavTop {
+	color: #fff;
+	padding: 10px 0;
+	font-size: 1.2em;
+	text-align: center;
+}
+.mvNavLk {
+	font-size: .9em;
+	padding: 10px 5px;
+}
+.mvNavLk ul, .mvNavSub {
+	padding: 0 0 0 8px;
+}
+.mvNavLk .mvSrcSubLk {
+    font-size: 1.1em;
+}
+.slrMvNav .mvNavLk ul, .mvNavSub {
+    padding: 0 0 0 20px;
+    position: relative;
+}
+.mvNavLk strong, .mvNavLk a {
+	display: block;
+	padding: 5px 0;
+}
+.mvNavLk strong {
+	font-size: 1.1em;
+}
+.mvNavLk a {
+	text-decoration: none;
+}
+.mvNavLk a:hover {
+	text-decoration: underline;
+}
+    .mvNavLk .contentBefore:before {
+        content: "<";
+        display: inline-block;
+        padding-right: 3px;
+        text-decoration: none;
+    }
+.mvNavLk a.contentBefore:hover:before {
+    text-decoration: none;
+}
+.mvMenu.testIntertitle {
+    padding-top: 5px;
+}
+.testIntertitle .mvNavMgHeader {
+    margin-bottom: 2px;
+}
+.testIntertitle .mvNavLk {
+	font-size: 1em;
+}
+.testIntertitle .mvNavLk .mvNavSub {
+    padding: 0;
+}
+.testIntertitle .mvNavSub > strong {
+    border-top: 1px solid #d7d9e4;
+    margin-top: 5px;
+}
+.testIntertitle .mvNavLk strong {
+	font-size: 1.2em;
+    padding: 9px 0 0 0;
+}
+.testIntertitle .mvNavLk span strong {
+	font-size: 1em;
+}
+.testIntertitle .mvNavLk a {
+    display: inline-block;
+    font-size: 1.1em;
+    padding: 2px 0 0 2px;
+}
+.testIntertitle .mvNavLk .mvNavSub ul {
+    padding-left: 0;
+}
+.testIntertitle .mvNavLk .mvNavSub ul li a {
+    font-size: .9em;
+    padding: 3px 0 3px 8px;
+}
+
+/* Refonte menu */
+.testRefonteMenu .mvNavLk .mvSrcLk {
+    padding: 0;
+}
+.testRefonteMenu .mvNavLk .mvExpendMore:not(.moreCategories) span, 
+.testRefonteMenu .mvNavLk .mvExpendLess:not(.lessCategories) span {
+    color: #878787;
+    font-weight: normal;
+}
+.testRefonteMenu .moreCategories,
+.testRefonteMenu .lessCategories {
+    cursor: pointer;
+}
+.testRefonteMenu .moreCategories:after, .testRefonteMenu .lessCategories:after {
+    content: "";
+    height: 24px;
+    position: absolute;
+    right: -5px;
+    top: 0px;
+    width: 9px;
+} 
+.testRefonteMenu .moreCategories:after {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAMAAAAmGUT3AAAAPFBMVEUAAAAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjLnAwAiAAAAFHRSTlMA/hgO18i2W0tC+fDq0dC7n4F5AQBOx0IAAAAySURBVAjXFcbFAQAgDACxK8Vd9t8VyCukeXhWwMsGgnjUSSRlp6C9xNqUx1ixBvgdPxcjSAD40mi6JwAAAABJRU5ErkJggg==) no-repeat center;
+    
+}
+.testRefonteMenu .lessCategories:after {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAMAAAAmGUT3AAAAPFBMVEUAAAAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjLnAwAiAAAAFHRSTlMA/hgO19DIW0tE+fDruba1oIR7Acs/oKgAAAA3SURBVAjXHcpJDgAgCANAEBVwX/7/V8EemklasIQerB0R4yelJjWRIRcFwUwwkG04OIG3X+7SBxWCAPhwXkibAAAAAElFTkSuQmCC) no-repeat center;   
+}
+.testRefonteMenu .mvNavLk .mvExpendMore,
+.testRefonteMenu .mvNavLk .mvExpendLess {
+    position: relative;
+}
+.testRefonteMenu .mvPreviousCategories {
+    padding: 0 0 5px 0;
+}
+.testRefonteMenu .mvPreviousCategories label {
+    padding: 3px 0;
+}
+.testRefonteMenu .mvCurrentCategories {
+    border-top: 1px solid #d7d9e4;
+    padding-top: 10px;
+}
+.testRefonteMenu + .searchWizardLeftMenuZone {
+    margin-top: 0;
+}
+
+/** 3. VITRINE **/
+.navV > li span {
+	cursor: pointer;
+}
+.navV > li > div {
+	border-bottom: 1px solid #d7d9e4;
+	cursor: pointer;
+	min-height: 3.7em;
+	line-height: 3.7em;
+	padding: 0 9px 0 7px;
+}
+.navV.mvLp > li > div {
+	border-top: 1px solid #d7d9e4;
+}
+.navV > li > div > span {
+	display: inline-block;
+	line-height: normal;
+	vertical-align: middle;
+}
+.subNavV, .navV > li > ul  {/* Todo delete big selector */
+	background: #f0f0f7;
+	border-bottom: 1px solid #d7d9e4;
+	display: none;
+	padding: 5px 20px;
+}
+.navV > li > .act + ul {
+	display: block;
+}
+.mvExpend {
+	display: none;
+}
+.subNavV a, .subNavV span, .navV ul a, .navV ul span, .mvSrc a, .mvSrc label, .mvSrc .mvExpendMore, .mvSrc .mvExpendLess {/* Todo delete .navV ul a, .navV ul span */
+	display: block;
+	padding: .37em 0;
+	text-decoration: none;
+}
+.subNavV li, .navV ul li  {/* Todo delete big selector */
+	padding: 5px 0;
+}
+.mvSrc a, .mvSrc label, .mvSrc .mvExpendMore, .mvSrc .mvExpendLess {
+	padding: .37em 20px .37em 10px;
+}
+.mvSrc input[type=checkbox] {
+	display: none;
+}
+.mvExpendMore span, .mvExpendLess span {
+	cursor: pointer;
+}
+.navV a:hover, .mvSrc a:hover, .mvSrc label:hover, .navV > li > div:hover > span, .navV > li span:hover { 
+	text-decoration: underline;
+}
+.navV li.act > a {
+	font-weight: bold;
+}
+.sndSNavV, .sndSNavMvSrc a, .sndSNavMvSrc label, .sndSNavMvSrc .mvExpendMore,
+.navV ul ul, .mvSrc ul ul ul a, #menuV .mvSrc ul ul ul label, .mvSrc ul ul ul .mvExpendMore  {/* Todo delete big selector */
+	font-size: .9em;
+}
+.trdSNavV, .navV ul ul ul  {/* Todo delete big selector */
+	font-size: 1em;
+	padding: 0 10px;
+}
+.sndSNavV a, .sndSNavV span, .navV ul ul a, .navV ul ul span { /* Todo delete big selector */
+	padding-left: 10px;
+}
+.trdSNavV a:before, .trdSNavV span:before, .navV ul ul ul a:before, .navV ul ul ul span:before { /* Todo delete big selector */
+	font-size: .7em;
+}
+.mvSrc ul ul ul a:before, .mvSrc ul ul ul label:before, .mvSrc ul ul .mvExpendMore:before,
+.sndSNavMvSrc a:before, .sndSNavMvSrc label:before, .subNavMvSrc .mvExpendMore:before { /* Todo delete big selector */
+	content:"\2022 \00A0"; 
+}
+
+/** 4. SEARCH **/
+#mvNav label {
+	cursor: pointer;
+}
+#mvNav .mvNavSelectedCat {
+    cursor: default;
+    text-decoration:none;
+}
+#mvNav .mvNavSelectedCat:hover {
+    text-decoration:none;
+}
+.mvSrc label {
+	overflow: hidden;
+}
+.mvSrc .mvExpendMore, .mvSrc .mvExpendLess {
+	text-align: left;
+}
+.navMvSrc > li > a, .navMvSrc > li > label, .navMvSrc > .mvExpendMore, .navMvSrc > .mvExpendLess,
+.mvSrc > ul > li > a, .mvSrc > ul > li > label, .mvSrc > ul > li.mvExpendMore, .mvSrc > ul > li.mvExpendLess { /* Todo delete big selector */
+	font-weight: bold;
+}
+.subNavMvSrc a, .subNavMvSrc label, .subNavMvSrc .mvExpendMore,
+.mvSrc ul ul a, #menuV .mvSrc ul ul label, .mvSrc ul ul .mvExpendMore {/* Todo delete big selector */
+	padding: .15em 20px;
+}
+.mvSrc {
+	border-bottom: 1px solid #d7d9e4;
+	padding: .3em 0;
+}
+.mvSrc a span, .mvSrc label span {
+	float: right;
+}
+.mvSrcBck, #menuV label.mvSrcBck {
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	margin-bottom: .5em; 
+	text-decoration: underline;
+}
+.mvSrcBck:before {
+	content: "\00AB \00A0";
+}
+
+.slrMvNav .mvSrcSubLk > li.current > label {
+    font-weight: bold;
+}
+
+.slrMvNav .mvSrcSubLk > li.act > ul {
+    padding-left: 15px;
+}
+
+.slrMvNav .mvSrcLk ul.mvNavLvl3Ul > li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    border-left: 2px solid #d7d9e4;
+}
+
+/* Nouveau menu */
+.mvNavLk [type=checkbox], .mvSrcExpend {
+	display: none;
+}
+.mvNavLk .mvSrcLk {
+	padding: 0 8px;
+}
+.mvSrcLk>li>label, .mvSrcExpend>li>label, .mvNavLk .mvExpendMore, .mvNavLk .mvExpendLess,
+.mvNavCatTitle {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.mvNavLk label, .mvNavLk .mvExpendMore span, .mvNavLk .mvExpendLess span,
+.mvNavCatTitle {
+	cursor: pointer;
+	display: block;
+	padding: 5px 0;
+}
+.mvNavLk label:hover, .mvNavLk .mvExpendMore:hover, .mvNavLk .mvExpendLess:hover {
+	text-decoration: underline;
+}
+.mvNavLk .mvExpendMore:hover, .mvNavLk .mvExpendLess:hover {
+	color: #323232!important;
+}
+.mvExpendMoreLvl2>span, .mvExpendLessLvl2>span,
+.mvExpendMoreLvl3>span, .mvExpendLessLvl3>span {
+    font-size:.9em;
+}
+.mvNavSel,
+.mvNavLvl2.mvNavLvl2Search .mvNavSel,
+.mvNavLvl3.mvNavLvl3Search .mvNavSel {
+	font-weight: bold;
+}
+.mvNavLvl2.mvNavLvl2Search {
+	border-top: 1px solid #d7d9e4;
+	width: 160px;
+}
+.mvNavLvl2.mvNavLvl2Search>li>label,
+.mvNavLvl3.mvNavLvl3Search>label,
+.mvNavLvl3>li>label {
+    font-size: 1.0em;
+    font-weight: normal;
+}
+.mvNavLvl3.mvNavLvl3Search>label:before {
+	content: none;
+}
+.mvSrcLk .mvSrcBack {
+	font-size: 1em;
+	font-weight: normal;
+}
+.mvSrcLk strong {
+	padding: 0;
+}
+.mvFSrcInput {
+	border: 1px solid #d7d9e4;
+	border-right: 0;
+	height: 35px;
+	margin-top:5px;
+	padding: 5px 10px; 
+}
+.mvFSrcBtn {
+	background:#d7d9e4;
+	border:1px solid #d7d9e4;
+	color:#22398e;
+	cursor: pointer;
+	font-size: 1.1em;
+	font-weight:bold;
+	height:35px;
+	margin:5px 0;
+	width:92px;
+}
+.mvFSrcBtn:active {
+	box-shadow: 0 2px 10px 0 rgba(132,132,132,.4);
+}
+.mvFiltSrc .redS, .mvFiltSrc input[type=checkbox] {
+	display: none;
+}
+.mvFSrcRes {
+	background: #f0f0f7;
+	display: inline-block;
+	padding: 5px;
+}
+.mvFSrcRes .delFilter{
+	background: 0;
+	margin: 0 0 0 10px;
+	position: static;
+}
+.mvFilter, .mvHistoric {
+	border-right: 1px solid #f0f0f7;
+	position: relative;
+	overflow: hidden;
+}
+.mvFilter ::-webkit-scrollbar {/* css scrollbar general */
+	width: 5px;
+}
+.mvFilter ::-webkit-scrollbar-thumb {/* css scrollbar element scroll */
+	background: #ababab;
+	border-radius: 2px; 
+}
+.mvFTit {
+	background: #f0f0f7;
+	display: block;
+	font-size: .9em;
+	font-weight: normal;
+	padding: 10px;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 2;
+}
+.mvFSingle {
+	padding: 7px 0;
+}
+.mvFSingle ul {
+	background: #f0f0f7;
+	text-transform: uppercase;
+}
+.mvFilter div, .mvFilter .cbhFacet, .mvFilter ul {
+	max-height: 11em;
+	overflow: auto;
+	width: 100%;
+}
+.mvFilter label {
+	cursor: pointer;
+	display: list-item;
+	font-size: .9em;
+	margin: 1em .5em;
+	padding: 0;
+}
+.mvFilter label:hover {
+	font-weight: bold;
+}
+.mvFilter input {
+	margin-right: .5em;
+	vertical-align: top;
+}
+.mvFilter label a {
+	color: #323232;
+	text-decoration: none;
+}
+.mvFilterClr {
+	overflow: hidden;
+}
+.mvFilter .sta {
+	margin: 0 0 0 2px;
+	position: relative;
+	top: -4px;
+}
+.delFilter {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAbFBMVEU9W39NaY719Pn///08WoD09flNa4///vxlfpxkfZsXK0wXLlBjeprg5O1LaIhQaYhfdpZjfpvs6/A7W4Ly8fbi5er09fc9WX5SbYv+/v9jfJtmfZxNaozn7PDx8vc+Wn9Ubo9je5dge5n///+6UOMBAAAASElEQVR42gXBCQJAIBQFwGenJO2lkP7972gGa/bD4vOGElQ/qVDgunHfMTuQODg/BCFpyZjUCXc052nijfpe1l5vRfseoudrP5gxBQY834JKAAAAAElFTkSuQmCC') center center no-repeat;
+	cursor: pointer;
+	position: absolute;
+	height: 20px;
+	top: 6px;
+	right: 0;
+	z-index: 3;
+}
+.mvFilter div.selection {
+	background-color: #F8F8F8;
+	border-right: 0;
+	font-weight: bold;
+	max-height: initial;
+}
+.mvFilter label.noResult {
+	color: #c0cad6;
+	cursor: default;
+}
+.mvFilterClr li {
+	border: 1px solid #fff;
+	float: left;
+	height: 20px;
+	margin: 9px;
+	width: 20px;
+}
+.mvFilterClr label {
+	border: 1px solid #ccd3dd;
+	height: 18px;
+	margin: 0;
+	overflow: hidden;
+	width: 18px;
+}
+.mvFilterClr .selFilter {
+	border: 1px solid #323232;
+}
+.mvFilterClr .selFilter label {
+	border: 2px solid #fff;
+}
+#menuV .mvFilterClr input[type=checkbox]{
+	display: none;
+	margin: 0;
+}
+.mvFilterClr a {
+	display: block;
+	height: 22px;
+}
+#menuV .mvFilterClr label:hover, #menuV .mvFilterClr label a:hover {
+	text-decoration: none;
+}
+.mvAFList ul {
+	margin-top: 3px;
+}
+.mvAFList li {
+	cursor: pointer;
+	font-size: .9em;
+	padding: 5px 0;
+}
+.mvAFList input[type=checkbox] {
+	display: none;
+}
+.mvAFList li + li, {
+	border-top: 1px solid #D7D9E4;
+}
+.mvAFDelAll {
+	color: #096EC8;
+	cursor: pointer;
+	float: right;
+	font-size: .9em;
+}
+.mvAFDelAll:hover {
+	text-decoration: underline;
+}
+.mvAFDel {
+	float: right;
+	font-size: 20px;
+	margin-top: -5px;
+}
+.mvSKbv {
+	cursor: pointer;
+	font-size: .9em;
+	padding: 5px 0;
+}
+.mvNavLk label span {
+	color: #999999;
+}
+.slrMvNav .mvNavLk label span.pCount {
+    color: #878787;
+    padding-left: 3px;
+}
+.mvRerankingList {
+	border-bottom: 1px solid #D7D9E4;
+}
+/* Redirection hub Guide achat*/
+.mvShpGuideIcon {
+    background: url('https://i2.cdscdn.com/resources/RWD/lp/mvShpGuideIcon.png') no-repeat;
+    height: 23px;
+    margin: 8px 0 0 15px;
+    width: 17px;
+}
+.mvShpGuide {
+    border: 1px solid #d7d9e4;
+    display: flex;
+    height: 45px;
+    margin: 16px 0 12px 0;
+}
+.mvShpGuideLbl {
+    line-height: 45px;
+    margin-left: 10px;
+}
+.mvShpGuide a {
+    color: #096ec8;
+    text-decoration: none;
+}
+/* Question Communauté */
+.nmvSupQA {
+	border: 1px solid #d7d9e4;
+	font-size: 12px;	
+	height: 45px;
+    margin-bottom: 12px;
+	text-align: center;
+}
+.mvMenu + .nmvSupQA {
+    margin-top: 10px;
+}
+.nmvSupQA a {
+	text-decoration: none;
+}
+.nmvSupQAAsk {
+	color: #096EC8;
+    padding: 4px 0;
+}
+.nmvSupQACom {
+	color: #323232;
+}
+/* Historique de recherche */
+.mvHistoric li {
+	font-size: .9em;
+	padding: .5em 0 .5em .5em;
+}
+.mvHistoric span:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/** 5. LP **/
+.mvLpSeeMenu {
+	border-top: 1px solid #fff;
+	cursor: pointer;
+	text-transform: none;
+}
+.mvLpSeeMenuArr {
+	font-weight: bold;
+	font-size: 2.7em;
+	float: right;
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+}
+.open .mvLpSeeMenuArr {
+	padding: 0 5px;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+}
+.navV.mvLp > li > ul {
+	border-bottom: 0;
+}
+/* Geloc */
+.mvGeoloc {
+	border: 2px solid #f4246b;
+}
+.mvGTit {
+	background: #f4246b;
+	color: #fff;
+	padding: .3em 10px .5em;
+}
+.mvGTxt {
+	padding: .3em 10px;
+}
+.mvGTxt p {
+	margin: 10px 0 0;
+}
+.mvGTxt select {
+	border-radius: 3px 0 0 3px;
+	border: 1px solid #ced6e0;
+	box-shadow: inset 0 3px 3px #e2e2e2;
+	height: 32px;
+	margin: 10px 0;
+	padding: 8px 10px;/* /!\ important to be in px for align input[text] & input[btn] /!\ */
+	width: 100%;
+}
+.mvGTxt a {
+	color: #f4246b;
+	display: block;
+	margin: 0 0 10px;
+	text-align: center;
+}
+/* Surcharge new menu TODO : maj */
+.mvGeoloc {
+	border: 1px solid #d7d9e4;
+	font-size: .9em;
+	margin: 10px 0;
+	padding: 10px 15px;
+}
+.mvGTit {
+	background: none;/* Surcharge new menu TODO : delete */
+	color: #f21f6b;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 0;/* Surcharge new menu TODO : delete */
+}
+.mvGeoloc p {
+	padding: 5px 0;
+}
+.mvGeoloc select {
+	width: 100%;
+}
+
+/** 6. PLAN DU SITE **/
+#main.mainSm {
+	padding: .75em;
+}
+.smOther {
+	padding-top: 1em;
+}
+.smOther h2, .smOther li {
+	padding-bottom: .75em;
+}
+.smCol {
+	float: left;
+	margin-right: 1%;
+	width: 19%;
+}
+.mainSm #menuV {
+	float: none;
+	border-bottom: 0;
+	margin-right: 0;
+	margin-top: 1em;
+	width: auto;
+}
+.mainSm .navV {
+    border-bottom : 1px solid #d7d9e4;
+	margin-bottom: 0;
+}
+.mainSm .navV > li > div, .mainSm .navV > li > ul {
+    border-bottom: 0;
+    border-top: 1px solid #d7d9e4;
+}
+
+#menuV .cbhFacet input[type=checkbox] {
+	display: none;
+}
+.mainSm .navV > li > div, .mainSm .navV > li > div:hover > span, .mainSm .navV > li span:hover {
+	cursor: default;
+	text-decoration: none;
+}
+
+.mHelp {
+	display: block;
+	padding: 20px 0;
+	text-align: center;
+}
+.mHelp > div:first-child {
+	display: block;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.lpTopLight #bc li:last-child, .lpTopLight #bc li > h1 ,.lpTopLight #bc li > h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.lpTopLight #bc li:last-child span {
+        color: #787878;
+        font-weight: 100;
+        font-size: 0.6em;
+    }
+/** 7. MEDIA **/
+/* @media : hack IE8 */
+ @media \0screen { 
+	#menuV .mvSrc input[type=checkbox], #menuV .cbhFacet input[type=checkbox] {
+		display: inline-block;
+		filter: alpha(opacity=0);
+	}
+}
+
+/** MENU GAUCHE **/
+.mvMenu {
+	border-right: 1px solid #d7d9e4;
+	padding: 7px 10px 10px 10px; 
+	margin-top: 10px; 
+	position: relative;
+}
+.mvMenu .mvNavLk {
+	padding: 0;
+}
+.mvNavMgHeader, .mvFilterMgHeader {
+	background-color: white;
+	border: 0;
+	color: #E23A05;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.mvFilterMgHeader {
+    border-top: 1px solid #d7d9e4;
+	margin-top: 10px;
+    padding-top: 15px;
+}
+.testRefonteMenu .mvFilterMgHeader {
+    margin-top: 5px;
+}
+.mvNavMg label,
+.mvNavMg .mvNavCatTitle {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.mgFTitle {
+	cursor: pointer;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.mgFTitle span {
+	vertical-align: middle;
+}
+
+#facetsList input[type=checkbox]{
+	margin-right: 6px;
+	vertical-align: middle;
+}
+.mgFacetGroup {
+    font-size: inherit;
+    margin-bottom: 22px;
+}
+.mgFacetGroup .mgFacetGroupName {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.mvNewlookFilter .mgFacetGroup .mgFacetGroupName {
+    font-size: 14px;
+}
+.mgFacetGroup .mgFacetGroupContent {
+    border-left: 2px solid #d7d9e4;
+    padding-left: 10px;
+}
+.mgFacetGroup .mgFacetGroupContent .mgFacetListing {
+    margin-bottom: 8px;
+}
+.mgFacetGroup.mgSingleValueFacetGroup .mgFacetGroupContent label {
+    font-weight: normal;
+}
+.mgFacetGroup.mgSingleValueFacetGroup .mgFacetGroupContent .mgFacetListing {
+    margin-bottom: 2px;
+    padding-top: 0;
+}
+.mgFacetGroup.mgSingleValueFacetGroup .mgFacetGroupContent .mgFTitle {
+    margin-bottom: 0;
+}
+.mgFacetListing {
+	margin-bottom: 22px;
+    padding-top: 4px;
+}
+.mgFacetListing a {
+	text-decoration:none;
+}
+.mgFacetListing ::-webkit-scrollbar {
+    width: 5px;
+}
+.mgFacetListing ::-webkit-scrollbar-thumb {
+    background: #ababab;
+    border-radius: 2px;
+}
+
+.mgFacetContent li {
+	margin-bottom: 1px;
+}
+
+.mgFacetContent li label, .mgFacetContent label {
+    cursor: pointer;
+	display: block;
+	overflow: hidden;
+    padding: 3px 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.mgFacetContent li label > span, .mgFacetContent li label a {
+    text-decoration: none;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.mgFCNbrItems {
+    color: #787878;
+}
+
+.mgSelectedFacet{
+	background-color: #EEEEEE;
+	font-weight: bold;
+}
+
+.mgFacetColorList .mgSelectedColorFacet{
+	border: 2px solid #283847;
+	vertical-align: top;
+}
+
+.mgFacetColorList li {
+	border: 1px solid #d7d9e4;
+	display: inline-block;
+	height: 22px;
+	width: 22px;
+	padding: 0;
+    margin: 0 3px 0 0;
+}
+
+.mvNewlookFilter .mgFacetColorList li {
+    border: solid 1px #000;
+    border-radius: 2px;
+    height: 25px;
+    width: 25px;
+    margin: 0 2.5px 0 2.5px;
+}
+
+
+.mvNewlookFilter .mgFacetGroup .mgFacetGroupContent .mgFOpen .mgFTitle span {
+    font-weight: bold;
+}
+
+.mgFacetColorList input[type=checkbox] {
+	display: none;
+}
+.mgFacetColorList label {
+	height:100%;
+}
+ul.mgFacetColorList li.beige {
+    background-color: #dba87f;
+}
+ul.mgFacetColorList li.blanc {
+    background-color: #ffffff;
+}
+ul.mgFacetColorList li.bleu {
+    background-color: #4a79c6;
+}
+ul.mgFacetColorList li.gris {
+    background-color: #828282;
+}
+ul.mgFacetColorList li.jaune {
+    background-color: #e5ca2c;
+}
+ul.mgFacetColorList li.marron {
+    background-color: #936247;
+}
+ul.mgFacetColorList li.noir {
+    background-color: #000000;
+}
+ul.mgFacetColorList li.orange {
+    background-color: #f2853b;
+}
+ul.mgFacetColorList li.rose {
+    background-color: #e260a1;
+}
+ul.mgFacetColorList li.rouge {
+    background-color: #d3374e;
+}
+ul.mgFacetColorList li.vert {
+    background-color: #6bb242;
+}
+ul.mgFacetColorList li.violet {
+    background-color: #7d56af;
+}
+.mgFAllList{
+	max-height: 300px;
+	overflow: auto;
+}
+
+.mvRerankingList{
+	margin-bottom: 3px;
+    padding-bottom: 3px;
+}
+
+.mgFIcon {
+	position: absolute;
+	font-size: 15px;
+	font-weight: bold;
+	right: 5px;
+    width: 9px;
+    height: 15px;
+    content: " ";
+}
+.mgFClose .mgFIcon {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAMAAAAmGUT3AAAAPFBMVEUAAAAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjLnAwAiAAAAFHRSTlMA/hgO18i2W0tC+fDq0dC7n4F5AQBOx0IAAAAySURBVAjXFcbFAQAgDACxK8Vd9t8VyCukeXhWwMsGgnjUSSRlp6C9xNqUx1ixBvgdPxcjSAD40mi6JwAAAABJRU5ErkJggg==) no-repeat center;
+}
+.mgFOpen .mgFIcon {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAMAAAAmGUT3AAAAPFBMVEUAAAAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjLnAwAiAAAAFHRSTlMA/hgO19DIW0tE+fDruba1oIR7Acs/oKgAAAA3SURBVAjXHcpJDgAgCANAEBVwX/7/V8EemklasIQerB0R4yelJjWRIRcFwUwwkG04OIG3X+7SBxWCAPhwXkibAAAAAElFTkSuQmCC) no-repeat center;
+}
+.mvFLink {
+	cursor: pointer;
+	padding: 5px 0 5px 18px;
+}
+.mvFLink:hover {
+	text-decoration: underline;
+}
+.mgFOpen .mgFacetColorList, .mgFOpen .mgFAllList, .mgFOpen .mvFLink {
+	display: block;
+}
+.mgFacetColorList, .mgFAllList, .mgFListMore, .mvFLink, .mvFLkLess  {
+	display: none;
+}			
+.mgFLinkSeeMore:before {
+	content: "+ ";
+}
+.mgFLinkSeeLess:before {
+	content: "- ";
+}
+.lpTopContent {
+    display: table;
+    border-bottom: 1px solid #d7d9e4;/*Inutile si bloc de droite*/ 
+	padding: 5px 0;
+}
+.lpInfoSort {
+	display: table;
+	height: 44px;
+	padding: 0 10px 5px 0;
+	table-layout: fixed;
+	width: 100%;
+}
+.lpSortPost {
+	display: table-cell;
+}
+#lpArboDyn {
+	border-left: 1px solid #C9D5E3;
+	display: table-cell;
+	overflow: hidden;
+	vertical-align: middle;
+	white-space: nowrap;
+	width: 100%;
+}
+.lpTitleArboDyn {
+	display: table-cell;
+	overflow: hidden; 
+	position: relative;
+	vertical-align: middle;
+}
+.lpTitleArboDynOverlay {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAABBAMAAAAcMII3AAAAJFBMVEX////////////////////////////////////////////////Vd7HLAAAADHRSTlP87+PTu6CEaFI8Khuyq4oYAAAAEElEQVQI12PYNaMsxEiAAQANAgJf9AMrWwAAAABJRU5ErkJggg==) top right repeat-y;
+	position: absolute;
+	height: 100%;
+	right: 0;
+	top: 0;
+	width: 14px;	
+}
+.lstArboDyn {	
+	white-space: nowrap;
+}
+.lstArboDyn li {
+	border-right: 1px solid #C9D5E3;
+	display: inline;
+	height: 13px;
+	padding: 0 14px;
+}
+
+#lstRelatedSearch {
+	padding: 16px 0px 16px 0px;
+}
+
+.lstRelatedSearch li {
+	display: inline;
+	padding: 0 8px;
+}
+
+.lstArboDyn .adLast {
+	border-right: 0;
+}
+
+.lstRelatedSearch a {
+	color: #096EC8;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.lstArboDyn a, .lstArboDyn span {
+	color: #096EC8;
+	font-size: 12px;
+	text-decoration: none;
+}
+#lpTitle {
+	display: table-cell;
+	height: 37px;
+	padding-right: 14px;	
+	vertical-align: middle;
+	white-space: nowrap;
+}
+#lpTitle span {
+    color: #787878;
+	margin-left: 5px;
+}
+.bmmTitle {
+    overflow: hidden;
+}
+.bmmTitle #lpTitle {
+	padding-top:7px;
+	height:auto;
+}
+.bmmTitle #lpTitle h1, .lpInfoSort #lpTitle h1{
+	display: inline;
+	padding: 0;
+	vertical-align: middle;
+}
+.facetSortTools{
+	border-left: 1px solid #C9D5E3;
+	display: table-cell;
+	height: 27px;
+	margin-left: 14px;
+	padding-left: 14px;
+	white-space: nowrap;
+	width: 320px;
+}
+.lpSortForm {
+	height: 100%;
+}
+.lpSelectSortTitle {
+	color: #323232;
+	font-size: 12px;
+	font-weight: bold;
+}
+.lpInfoSort .lpSelectSort {
+	height: 32px;
+	max-width: 206px;
+    padding: 0 0 0 4px;
+    width: 206px;
+}
+#lpBcHelp {
+	display: none;
+}
+#lpBcHelp > div {
+    display: inline-block;
+}
+#lpBcHelp .min {
+	color: #293847;
+	font-size: 10px;
+	font-weight: normal;
+}
+#lpBcHelp .bcHelpTitle {
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+}
+#lpBcHelp .bcHelpNumber {
+	color: #E23A05;
+	font-size: 20px;
+	font-weight: bold;
+}
+.lpHeaderZtd {
+	padding: 10px 0;
+	width: 100%;
+    border-bottom: 1px solid #d7d9e4;
+}
+.testRightCol .lpHeaderZtd, .testRightCol .lpZtdTxt {
+    border-bottom: none;
+    border-top : 1px solid #d7d9e4;
+}
+#lpActivesFilters {
+	display: table;
+	padding-left: 12px;
+	width: 100%;
+}
+.lpActiveFiltersCollapseBtn, .lpActiveFiltersDisplayBtn {
+    background-color: #eee;
+    border-radius: 28px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    margin: 8px 3px;
+    padding: 0 8px;
+}
+.lpFiltersCollapsedMarker {
+    font: bold 16px arial;
+    color: #323232;
+    margin: auto 14px;
+}
+.lpMGSAllFilters, .lpMGSFilterDelAll {
+	display: inline-block;
+}
+.lpMGSFilterTitle {
+	display: inline-block;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.lpMGSActiveFilter {
+	background-color: #eee;
+	border-radius: 28px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 12px;
+	height: 28px;
+	line-height: 19px;
+	margin: 8px 3px;
+	padding: 0 7px 0 9px;				
+}
+.lpMGSActiveFilter label {
+    cursor: pointer;
+}
+.lpDelFilter {
+	display: inline-block;
+    font-size: 2.2em;
+	height: 100%;
+	margin-left: 5px;
+    position: relative;
+    right: 3%;
+    top: 8%;
+    transform: rotate(45deg);
+}
+.lpMGSActiveFilter input[type=checkbox] {
+	margin: 0;
+    opacity: 0;
+    width: 0;
+}
+.lpMGAFDelAll, .lpMGAFDelAll + .lpDelFilter {
+	color: #dd4014;
+}
+.Dym {
+    padding: 0px 14px
+}
+.Dym span { 
+    color : #323232; 
+    font-size: 14px; 
+}
+.Dym a {
+    color: #096ec8;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#lpArboDyn.DymConnexe {
+    display: table-row;
+}
+/* https://jira.cdiscount.com/browse/FTS-1493 ergonomie menu gauche */
+
+/*Test de styling de la scrollbar - reste pas à mettre une margin à gauche*/
+.mvNewlookFilter .mgFacetListing ::-webkit-scrollbar {
+    width: 5px;
+}
+
+.mvNewlookFilter .mgFacetListing ::-webkit-scrollbar-thumb {
+    background: #ababab;
+    border-radius: 2px;
+}
+
+.mvNewlookFilter .mgFacetListing ::-webkit-scrollbar-track {
+    border-left: 5px solid transparent;
+}
+
+#menuV.mvNewlookFilter {
+    max-width: 250px;
+    width: 220px;
+}
+#menuV span.checkmark {
+    border-radius: 2px;
+    display: flex;
+    height: 18px;
+    left: 0;
+    margin-right: 10px;
+    min-width: 18px;
+    top: 0;
+    width: 18px;
+}
+
+#menuV:not(.mvNewlookFilter) span.checkmark {
+    display: none;
+}
+
+.mvNewlookFilter .mgFacetListing > .mgFTitle label {
+    width: 100%;
+}
+
+.mvNewlookFilter  label input[type=checkbox] {
+    cursor: pointer;
+    display: flex;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.mvNewlookFilter .mgFacetContent li label, .mvNewlookFilter .mgFacetContent label {
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    line-height: 18px;
+    padding: 3px 0;
+}
+
+.mvNewlookFilter label input[type="checkbox"]:not(checked) ~ span.checkmark {
+    border: solid 1px #9AADCC;
+}
+
+.mvNewlookFilter label input[type="checkbox"]:checked ~ span.checkmark {
+    background-color: #096ec8;
+    border: solid 1px #096ec8;
+}
+
+.mvNewlookFilter .mgFacetContent label:hover span:not(.checkmark) {
+    color: #096ec8;
+}
+.mvNewlookFilter .mgFacetContent label:hover .checkmark {
+    background-color: #99c5e8;
+    border: solid 1px #99c5e8;
+}
+.mvNewlookFilter .mgFacetContent label:hover .checkmark:after {
+    border: solid #FFF;
+    border-width: 0 2px 2px 0;
+    display: block;
+    height: 12px;
+    left: 5px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 6px;
+}
+
+.mvFLink {
+    color: #096ec8;
+    font-size: 14px;
+    padding-left: 0px;
+}
+
+.checkmark:after {
+    content: "";
+    display: none;
+    position: relative;
+}
+
+.mvNewlookFilter label input[type="checkbox"]:checked ~ .checkmark:after {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: block;
+    height: 12px;
+    left: 5px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 6px;
+}
+.mvNewlookFilter .mvNavMgHeader, .mvNewlookFilter .mvFilterMgHeader {
+    font-size: 15px;
+}
+
+.mvNewlookFilter .mgFTitle {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.mvNewlookFilter .mgFacetGroup .mgFTitle span,
+.mvNewlookFilter .mgFacetGroup .mgFacetGroupName {
+    font-family: Arial;
+    vertical-align: middle;
+}
+
+.mvNewlookFilter .mgFacetGroup .mgFacetGroupName {
+    font-weight: bold;
+}
+
+.mvNewlookFilter .mgSelectedFacet {
+    background: transparent;
+    font-weight: normal;
+}
+
+span.resetFilters.jsResetFilters {
+    color: #096ec8;
+    font-weight: normal;
+    position: absolute;
+    right: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.mgFAllList > ul > li > label > input ~ span {
+    max-width: 85%;
+    overflow: hidden;
+}
+
+.mvNewlookFilter .mgFacetContent span:not(.checkmark),
+.mvNewlookFilter .mgFAllList span:not(.checkmark) {
+    flex-grow: 1;
+    max-width: none;
+}
+
+.mvNewlookFilter .mgFAllList > ul > li > label > input ~ span {
+    text-overflow: ellipsis;
+}
+
+.mvNewlookFilter .mgFTitle > label > input ~ span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 85%;
+}
+
+/* end ergonomie menu gauche */
+@media only screen and (max-width: 1023px) {
+    #lpArboDyn.Dym {
+        display: none;
+    }
+}
+/* BP > 1280 **/
+@media only screen and (min-width: 1280px) {
+    .lpTopContent {
+        display: table;
+    }
+    #lpBcHelp {
+        display: table-cell;
+        padding: 0 20px;
+	    text-align: center;
+        width: 230px;
+    }
+    /* 0.036 ~= (250 - 220) / (1600 - 768) */
+    #menuV.mvNewlookFilter {
+        width: calc((100% - 768px) * 0.036 + 220px);
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #menuV.mvNewlookFilter {
+        width: 250px;
+    }
+}
